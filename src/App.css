@@ -11,6 +11,7 @@
   position: relative;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .overlay-1 {
@@ -39,6 +40,31 @@
   height: calc(100% - 88px);
 }
 
-.seperator {
-  background-color: ;
+.tv-video {
+  width: 1000px;
+}
+.tv-image {
+  width: 1000px;
+}
+.mob-image {
+  width: 1000px;
+}
+
+.boxshot-box {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+}
+
+.download-animation {
+  /* margin-left: 30px; */
+  background-image: url("assets/vid/download-icon.gif");
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.content-box {
+  transition: all 0.5s ease-in-out;
 }
