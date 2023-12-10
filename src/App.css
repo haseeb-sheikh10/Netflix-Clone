@@ -1,0 +1,44 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.header {
+  background-image: url("assets/img/banner.jpg");
+  height: 70vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay-1 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.overlay-2 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.hero-section {
+  width: 100%;
+  height: calc(100% - 88px);
+}
+
+.seperator {
+  background-color: ;
+}
