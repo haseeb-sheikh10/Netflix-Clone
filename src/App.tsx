@@ -171,7 +171,7 @@ function App() {
   return (
     <>
       <section className="header">
-        <nav className="flex justify-between lg:w-[60%] mx-auto px-6 py-7 relative z-10">
+        <nav className="flex justify-between lg:w-[60%] mx-auto px-6 py-6 relative z-10">
           <img src={logo} alt="Netflix Logo" className="w-24 lg:w-36" />
           <div>
             <button className="bg-primary px-3 py-1 rounded-md font-semibold">
@@ -192,10 +192,17 @@ function App() {
             Ready to watch? Enter your email to create or restart your
             membership.
           </div>
-          <div>
-            <input type="text" />
-            <div>
-              <button>Get Started</button>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-3 mt-3">
+            <div className="input-box w-[350px] px-4 py-4 rounded-md border border-emerald-400">
+              {/* <label className="text">Email address</label> */}
+              <input
+                className="bg-transparent"
+                type="text"
+                placeholder="Email address"
+              />
+            </div>
+            <div className="w-[200px] flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-3 font-bold text-[18px] lg:text-[22px]">
+              <button className="">Get Started</button>
               <IoIosArrowForward />
             </div>
           </div>
@@ -327,6 +334,57 @@ function App() {
                 )}
               </div>
             ))}
+          </div>
+        </div>
+        <div className="mt-5">
+          <div className="font-[400] text-[18px] lg:text-[20px] mt-3">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </div>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-3 mt-3">
+            <div className="input-box w-[350px] px-4 py-4 rounded-md border border-emerald-400">
+              {/* <label className="text">Email address</label> */}
+              <input
+                className="bg-transparent"
+                type="text"
+                placeholder="Email address"
+              />
+            </div>
+            <div className="w-[200px] flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-3 font-bold text-[18px] lg:text-[22px]">
+              <button className="">Get Started</button>
+              <IoIosArrowForward />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="bg-[#232323] py-1"></div>
+
+      <section className="footer lg:w-[65%] mx-auto py-20 px-5">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 underline">
+          <div className="flex flex-col items-start gap-5 text-sm">
+            <a className="cursor-pointer">Questions? Contact us.</a>
+            <a className="cursor-pointer">FAQ</a>
+            <a className="cursor-pointer">Investor Relations</a>
+            <a className="cursor-pointer">Privacy</a>
+            <a className="cursor-pointer">Speedtest</a>
+          </div>
+          <div className="flex flex-col items-start gap-5 text-sm">
+            <a className="cursor-pointer">Help Center</a>
+            <a className="cursor-pointer">Jobs</a>
+            <a className="cursor-pointer">Cookie Preferences</a>
+            <a className="cursor-pointer">Legal Notices</a>
+          </div>
+          <div className="flex flex-col items-start gap-5 text-sm">
+            <a className="cursor-pointer">Accounts</a>
+            <a className="cursor-pointer">Ways to Watch</a>
+            <a className="cursor-pointer">Corporate Information</a>
+            <a className="cursor-pointer">Only on Netflix</a>
+          </div>
+          <div className="flex flex-col items-start gap-5 text-sm">
+            <a className="cursor-pointer">Media Center</a>
+            <a className="cursor-pointer">Terms of Use</a>
+            <a className="cursor-pointer">Contact us</a>
           </div>
         </div>
       </section>
